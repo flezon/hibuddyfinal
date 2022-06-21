@@ -4,11 +4,8 @@ const productSchema = new Schema({
     name: {type: String, required: true},
     price: {type: Number, required: true},
     stock: {type: Number, required: true},
-    entry: {type: Number, required: true},
-    exit: {type: Number, required: true}
-}, {
-    timestamps: true,
-    versionKey: false
+    entry: {type: Number},
+    exit: {type: Number}
 })
 
-module.exports = model('productSchema',productSchema);
+module.exports = model('Products',productSchema);

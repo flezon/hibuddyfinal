@@ -1,12 +1,11 @@
 const { Schema, model } = require('mongoose')
+const { ObjectId } = Schema.Types
 
-const tableSchema = new Schema({
+const tableSchema = Schema({
     number: {type: Number, required: true},
-    order: {type: String, required: true},
-    bill: {type: Number, required: true}
-}, {
-    timestamps: true,
-    versionKey: false
+    orders: [{ type: ObjectId, ref: 'Orders', default: [] }],
+    bill : { type: Number},
+    state: {type: Boolean}
 })
 
-module.exports = model('tableSchema',tableSchema);
+module.exports = model('Table',tableSchema);
