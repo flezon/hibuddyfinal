@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto nav-flex-icons ">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle waves-effect waves-light" id="navbarDropdownMenumensajes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-comment"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-default"
+            aria-labelledby="navbarDropdownMenumensajes">
+            <a class="dropdown-item" ><strong>Mensajes en construcción</strong></a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-user"></i>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right dropdown-default"
+            aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" ><strong>Hola !</strong></a>
+            <a class="dropdown-item" routerLink="/profile">Tu perfil</a>
+            <a class="dropdown-item" routerLink="/settings">Configuraciones</a>
+            <!--<a class="dropdown-item" (click)="">Cerrar sesión</a> -->
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<app-tables></app-tables>

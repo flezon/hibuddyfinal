@@ -1,0 +1,83 @@
+<div class="container my-4">
+
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+    <div class="row">
+        <div class="col-8 col-md-8 col-sm-8">
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="mesas" role="tabpanel" aria-labelledby="mesas-tab">
+                    <div class="content-panel">
+                        <div class="row">
+                            <div *ngFor="let tables of tablesservice.tables" class="col-lg-3 col-md-4 col-sm-4">
+                                <div>
+                                    <a title="Imagen de mesa" href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop" ><img src="./assets/{{ tables.state }}.png" alt="imagen de mesa" /></a>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            ...
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="promociones" role="tabpanel" aria-labelledby="promociones-tab">
+                    <div class="content-panel">
+                        hola
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-4 col-md-4 col-sm-4">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="btn nav-link active" id="mesas-tab" data-bs-toggle="tab" data-bs-target="#mesas" type="button" role="tab" aria-controls="mesas" aria-selected="true">Mesas</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="btn nav-link" id="promociones-tab" data-bs-toggle="tab" data-bs-target="#promociones" type="button" role="tab" aria-controls="promociones" aria-selected="false">Promociones</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="btn nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Historial de ventas</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="btn nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Clientes frecuentes</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="btn nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Inventario</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="btn nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Stock activos</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="btn nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Informacion trabajadores</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="btn nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Codigo QR</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="btn nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Sistema contable</button>
+                </li>
+            </ul>
+            <div class="card  mb-3" style="max-width: 20rem;">
+                <div class="card-header">Header</div>
+                <div class="card-body">
+                <h4 class="card-title">Secondary card title</h4>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Button trigger modal -->
+</div>

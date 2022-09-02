@@ -5,7 +5,7 @@ const tableSchema = Schema({
     number: {type: Number, required: true},
     orders: [{ type: ObjectId, ref: 'Orders', default: [] }],
     bill : { type: Number},
-    state: {type: Boolean}
+    state: {type: String}
 })
 
 module.exports = model('Table',tableSchema);
